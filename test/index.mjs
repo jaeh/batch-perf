@@ -35,7 +35,7 @@ const time = arg => {
   const [time1, time2] = times
   console.log(`
 batch1 ${log.paint('yellow', time1)}ms - batch2 ${log.paint('yellow', time2)}ms.
-batch1 was ${log.paint('green', parseInt((time1 / time2) * 100))}% faster`)
+batch1 was ${log.paint('green', parseInt(100 - (time1 / time2) * 100))}% faster.`)
 
   return true
 }
