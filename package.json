@@ -1,0 +1,19 @@
+{
+  "name": "batch",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "private": true,
+  "scripts": {
+    "test": "t"
+  },
+  "keywords": [],
+  "author": "Jascha Ehrenreich",
+  "license": "MIT",
+  "devDependencies": {
+    "@magic/test": "^0.1.6"
+  }
+}
