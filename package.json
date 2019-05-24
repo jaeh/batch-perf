@@ -8,7 +8,8 @@
   },
   "private": true,
   "scripts": {
-    "test": "t"
+    "test": "t",
+    "coveralls": "coveralls"
   },
   "keywords": [],
   "author": "Jascha Ehrenreich",
