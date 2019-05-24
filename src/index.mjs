@@ -1,3 +1,5 @@
+var EMPTY_ARR = []
+
 export var batch1 = function(list) {
   var out = []
   list.forEach(function(item) {
@@ -5,7 +7,7 @@ export var batch1 = function(list) {
       ? out.push(false)
       : typeof item[0] === "function"
       ? out.push(item)
-      : out.push(...batch1(item))
+      : Array.prototype.push.apply(out, batch1(item))
   })
   return out
 }
@@ -19,5 +21,5 @@ export var batch2 = function(list) {
         ? [item]
         : batch2(item)
     )
-  }, [])
+  }, EMPTY_ARR)
 }
